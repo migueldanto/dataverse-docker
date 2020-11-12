@@ -28,7 +28,7 @@ services:
         container_name: dataverse
         ports:
         - "443:443"
-        - "8080:8080"
+        - "80:8080"
         - "4848:4848"
         environment:
           - "HOST_DNS_ADDRESS=0.0.0.0"
