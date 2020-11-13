@@ -1,3 +1,5 @@
+# Adecuacion despues de la instalación
+
 #### para desactivar el doi:
 
 entrar a una consola dentro del contenedor de dataverse
