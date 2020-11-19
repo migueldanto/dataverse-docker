@@ -1,1 +1,16 @@
-<html><body>You are being <a href="https://github-production-release-asset-2e65be.s3.amazonaws.com/136071472/5bcb8880-246e-11eb-842a-90f47956f44e?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20201112%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20201112T011355Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=ef62c0cfe75fe38fc45f4fcb5a90353108ed8150a373485a8aee03b1ca151441&amp;X-Amz-SignedHeaders=host&amp;actor_id=0&amp;key_id=0&amp;repo_id=136071472&amp;response-content-disposition=attachment%3B%20filename%3Dcv-keywords.json&amp;response-content-type=application%2Foctet-stream">redirected</a>.</body></html>
+[{
+    "vocab-name":"topicClassification",
+    "cvm-url":"https://ns.dataverse.org.ua/",
+    "language":"en",
+    "vocabs":["mesh"],
+    "protocol": "skosmos",
+    "vocab-codes": ["topicClassVocab","topicClassValue","topicClassVocabURI"]
+  },
+  {
+    "vocab-name":"keyword",
+    "cvm-url":"https://ns.dataverse.org.ua/",
+    "language":"en",
+    "protocol": "skosmos",
+    "vocabs":["unesco","mesh","dansorg","wikidata","thesaurus","iptc","agrovoc","faechersystematik"],
+    "vocab-codes": ["keywordVocabulary", "keywordValue", "keywordVocabularyURI"]
+  }]

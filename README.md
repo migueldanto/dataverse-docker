@@ -1,3 +1,25 @@
+#### instalacion propia
+
+```bash
+export traefikhost=localhost
+export $(cat .env |xargs )
+docker-compose -f docker-compose-local.yml up -d --build
+#revisar http://dataverse-dev.localhost/
+```
+- opcionalmente, para desactivar el DOI
+```bash
+# revisar si el contenedor se identifica como dataverse
+docker exec -it dataverse bash
+# ya dentro del contenedor
+curl -X PUT -d FAKE http://localhost:8080/api/admin/settings/:DoiProvider
+```
+
+- opcionalmente para asignar las cv-keywords que menciona la documentacion (aveces marca error, aun falta profundizar en el tema)
+```bash
+# una vez que http://dataverse-dev.localhost/ resuelva correctamente, mandar cv-keywords.json mediante curl:
+curl -H "Content-Type: application/json" -X PUT --data-binary @cv-keywords.json http://dataverse-dev.localhost/api/admin/settings/:CVMConf
+```
+---
 ## DataverseEU Docker module
 Dataverse Docker module was developed by [DANS](http://dans.knaw.nl) (Data Archiving and Networked Services) to run Dataverse data repository on Kubernetes and other Cloud services supporting Docker.
 Current available version of [Dataverse](https://github.com/IQSS/dataverse) is 5.0. The development of Docker module funded by [SSHOC](https://sshopencloud.eu/) project that will create the social sciences and humanities area of the European Open Science Cloud (EOSC).
