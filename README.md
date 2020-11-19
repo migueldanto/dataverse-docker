@@ -1,8 +1,9 @@
 #### instalacion propia
+Este fork contiene un par de modificaciones respecto al docker-compose-log.yml del repositorio original. Con dichas modificaciones es posible levantar los servicios con las siguientes lineas (teniendo ya instalado docker y docker-compose)
 
 ```bash
 export traefikhost=localhost
-export $(cat .env |xargs )
+export $(cat .env | xargs )
 docker-compose -f docker-compose-local.yml up -d --build
 #revisar http://dataverse-dev.localhost/
 ```
